@@ -66,8 +66,8 @@ def main():
 	'''
 	4. Train word2vec model.
 	'''
-	model = Word2Vec(sentences, window=context_window, size=dim, sg=model, iter=epochs, workers=workers, callbacks=callbacks)
-	info.out("Done training model.")
+	model = Word2Vec(sentences, window=context_window, vector_size=dim, sg=model, epochs=epochs, workers=workers, callbacks=callbacks)
+	info.out("Done training model.")  
 
 
 	'''
